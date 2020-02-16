@@ -1,0 +1,356 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Faizan Asad">
+    <title>WebShot- Website Screenshot Service</title>
+<link rel="shortcut icon" href="fav2.png" type="image">
+
+    <link rel="stylesheet" type="text/css" href="css/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- Bulma Version 0.8.x-->
+
+    
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contact.css">
+<link rel="shortcut icon" href="fav2.png" type="image">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+    <!-- START NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar">
+                    <a class="navbar-item is-active">By &nbsp <strong> Faizan Asad</strong></a>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->   
+    <section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+       Webshot WebApp - Screenshot Service APP Designed for client.
+      </h1>
+      <h2 class="subtitle">
+        Designed and developed by Faizan Asad.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+ <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-8 is-variable ">
+                    <div class="column is-two-thirds has-text-left">
+                        
+
+
+
+                 <header id="intro-header" class="intro-header" style="background-image: url('/wait.gif')">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                    <div class="site-heading">
+                                        <h1 style="text-shadow: 0px 0px 12px #000000;"><img src="logo.png" style=" padding-left: 8px;">&nbsp  Your Screenshot Demo</h1>
+                                        <h2 id="loading"><img src="wait3.gif" /><br/></h2>
+                                       
+                                       
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                        
+                        <img id="preloader" src="" />
+
+
+                    </div>
+
+
+
+
+<!-- SECOND -->  
+
+                    <div class="column is-one-third has-text-left">
+                    
+                     <form class="pure-form pure-form-aligned" method="get" action="">
+            <fieldset>
+
+                    <div class="field">
+                      <div class="control">
+                         <button id="open" name="open" class="button is-link is-fullwidth has-text-weight-medium is-medium" title="Capture screenshot">Take Screenshot <img src="fav2.png" style="max-width: 35px;max-height: 35px; padding-left: 8px;"></button> 
+                    <hr>
+                    <input id="address"  name="address" type="text"  style="background-color: grey;color: white; " readonly>
+                      </div>
+                    </div>
+
+
+                    <div class="field">
+                      <label class="label" for="url">Site address</label>
+                      <div class="control">
+                        <input id="url" class="input" name="url" type="text" placeholder="URL" maxlength="1024" value="google.com" autofocus>
+                      </div>
+                    </div>
+
+                <label class="label" for="width">Width</label>
+                <div class="pure-control-group">
+                    
+                    <input id="width" name="width" type="number" min="0" placeholder="Width">
+                </div>
+
+
+<label class="label" for="height">Height</label>
+                <div class="pure-control-group">
+                    
+                    <input id="height" name="height" type="number" min="0" placeholder="Height">
+                </div>
+
+
+ <label class="label" for="paperFormat">Paper format</label>
+                <div class="pure-control-group">
+                   
+                    <select id="paperFormat" name="paperFormat">
+                        <option label="Default" selected></option>
+                        <option value="letter">Letter</option>
+                        <option value="A2">A2</option>
+                        <option value="A3">A3</option>
+                        <option value="A4">A4</option>
+                        <option value="A5">A5</option>
+                    </select>
+                </div>
+
+
+ <label class="label" for="paperOrientation">Paper orientation</label>
+                <div class="pure-control-group">
+                   
+                    <select id="paperOrientation" name="paperOrientation">
+                        <option label="Default" selected></option>
+                        <option value="portrait">Portrait</option>
+                        <option value="landscape">Landscape</option>
+                    </select>
+                </div>
+
+
+<label class="label" for="zoom">Zoom</label>
+                <div class="pure-control-group">
+                    
+                    <input id="zoom" name="zoom" type="number" step="0.01" min="0" placeholder="Zoom">
+                </div>
+
+
+                <!-- See: https://github.com/laurentj/slimerjs/issues/259 -->
+<label class="label" for="quality">Quality (0-1)</label>
+
+                <div class="pure-control-group">
+                    
+                    <input id="quality" name="quality" type="number" step="0.01" min="0" max="1" placeholder="Quality">
+                </div>
+
+
+
+<label class="label" for="delay">Delay (ms)</label>
+                <div class="pure-control-group">
+                    
+                    <input id="delay" name="delay" type="number" min="0" placeholder="Delay">
+                </div>
+
+
+
+ <label class="label" for="format">Output format</label>
+                <div class="pure-control-group">
+                   
+                    <select id="format" name="format">
+                        <option label="Default" selected></option>
+                        <option value="png">PNG</option>
+                        <option value="jpg">JPG</option>
+                        <option value="pdf">PDF</option>
+                        <option value="html">HTML</option>
+                        <option value="bmp">BMP</option>
+                        <option value="ppm">PPM</option>
+                        <option value="ico">ICO</option>
+                    </select>
+                </div>
+
+
+
+<label class="label" for="js" class="pure-checkbox">Enable JavaScript</label>
+                <div class="pure-control-group">
+                    
+                    <input id="js" name="js" type="checkbox" checked>
+                </div>
+
+
+
+  <label class="label" for="images" class="pure-checkbox">Enable images</label>
+                <div class="pure-control-group">
+                  
+                    <input id="images" name="images" type="checkbox" checked>
+                </div>
+
+
+
+<label class="label" for="force" class="pure-checkbox">Force reload</label>
+                <div class="pure-control-group">
+                    
+                    <input id="force" name="force" type="checkbox">
+                </div>
+
+
+<label class="label" for="selector">Wait for DOM element</label>
+                <div class="pure-control-group">
+                    
+                    <input id="selector" name="selector" type="text" maxlength="1024" placeholder="CSS selector">
+                </div>
+
+
+            <label class="label" for="selectorCrop" class="pure-checkbox">Crop page by DOM element</label>    
+                <div class="pure-control-group">
+                    
+                    <input id="selectorCrop" name="selectorCrop" type="checkbox">
+                </div>
+
+
+          <label class="label" for="selectorCropPadding">Crop padding</label>  
+                <div class="pure-control-group">
+                  
+                    <input id="selectorCropPadding" name="selectorCropPadding" type="number" placeholder="0">
+                </div>
+
+ <label class="label" for="callback">Callback URL</label>
+                <div class="pure-control-group">
+                   
+                    <input id="callback" name="callback" type="text" maxlength="1024" placeholder="URL">
+                </div>
+
+
+<label class="label" for="agent">User agent</label>
+                <div class="pure-control-group">
+                    
+                    <input id="agent" name="agent" type="text" maxlength="1024" placeholder="User-Agent">
+                </div>
+
+
+<label class="label" for="user">User name</label>
+                <div class="pure-control-group">
+                    
+                    <input id="user" name="user" type="text" maxlength="256" placeholder="User">
+                </div>
+
+
+<label class="label" for="password">Password</label>
+                <div class="pure-control-group">
+                    
+                    <input id="password" name="password" type="text" maxlength="256" placeholder="Password">
+                </div>
+
+
+  <label class="label" for="headers">Headers</label>
+                <div class="pure-control-group">
+                  
+                    <input id="headers" name="headers" type="text" maxlength="1024" placeholder="Format: key1=value1;key2=value2;...">
+                </div>
+
+
+   <label class="label" for="clipRect">Clip rectangle</label>
+                <div class="pure-control-group">
+                 
+                    <input id="clipRect" name="clipRect" type="text" maxlength="1024" placeholder="Format: top,left,width,height">
+                </div>
+
+      <label class="label" for="engine">Engine</label>            
+      <div class="pure-control-group">
+                    <select id="engine" name="engine">
+                        <option label="Default" selected></option>
+                        <option value="phantomjs">PhantomJS</option>
+                        <option value="slimerjs">SlimerJS</option>
+                    </select>
+                </div>
+
+            </fieldset>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>WEBSHOT</strong> by <a href="https://fayzan.me">Faizan Asad</a>. The source code is not licensed
+     and the client is the sole owner.  Designed By <a href="http://fayzan.me">Faizan Asad</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+    <script src="js/http2pic.js"></script>
+</body>
+
+</html>
