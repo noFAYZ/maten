@@ -92,9 +92,7 @@
     });
 });
             
-              document.getElementById("loading").innerHTML = "<img class='story-small' src='"generateUrl();"'>";
-            
-            event.preventDefault();
+
         });
 
         var rememberHeight = false;
