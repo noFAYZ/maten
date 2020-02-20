@@ -56,7 +56,8 @@
         });
 
         $('#open').click(function(event) {
-            window.location = generateUrl();
+           document.getElementById("loading").innerHTML = "<img src='generateUrl();'>";
+            
             event.preventDefault();
         });
 
