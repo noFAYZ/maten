@@ -92,7 +92,7 @@
     });
 });
             
-             window.location= generateUrl();
+            alert( generateUrl(););
             
             event.preventDefault();
         });
