@@ -92,7 +92,9 @@
     });
 });
             
-
+             window.location= generateUrl();
+            
+            event.preventDefault();
         });
 
         var rememberHeight = false;
