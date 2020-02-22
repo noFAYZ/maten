@@ -56,10 +56,9 @@
         });
 
         $('#open').click(function(event) {
-	   var apiUrl;
-            
+	   var apiUrl;     
 		apiUrl=generateUrl();
-           
+            
             document.getElementById("imagey").src =apiUrl;
             window.open(apiUrl,'_blank');
 		
