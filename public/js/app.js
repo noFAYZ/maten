@@ -59,6 +59,8 @@
 	   var apiUrl;
             
 		apiUrl=generateUrl();
+            
+            document.getElementById("imagey").src =apiUrl;
             window.open(apiUrl,'_blank');
 		
             event.preventDefault();
