@@ -59,7 +59,7 @@
 	   var apiUrl;
             
 		apiUrl=generateUrl();
-            document.getElementById("gurl").value =apiUrl
+           
             document.getElementById("imagey").src =apiUrl;
             window.open(apiUrl,'_blank');
 		
