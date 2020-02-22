@@ -59,7 +59,8 @@
 	   var apiUrl;
             
 		apiUrl=generateUrl();
-		window.location = generateUrl();
+            window.open(apiUrl,'_blank');
+		
             event.preventDefault();
         });
 
