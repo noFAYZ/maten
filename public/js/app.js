@@ -54,19 +54,12 @@
                 element.select(updateAddress);
             }
         });
-        
-        
-        
-        
-        
-        
 
         $('#open').click(function(event) {
-         
+	   var apiUrl;
             
-            $(document).ready(function() {
-  window.location= generateUrl();
-            
+		apiUrl=generateUrl();
+		window.location = generateUrl();
             event.preventDefault();
         });
 
