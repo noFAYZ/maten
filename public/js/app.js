@@ -65,8 +65,7 @@
             
             var preview = document.getElementById('imagey');
             imageClipper(apiUrl, function() {
-                this.crop(x, y, 1024, 768)
-                .resize(225, 150)
+                this.resize(225, 150)
                 .toDataURL(function(dataUrl) {
                     console.log('cropped!');
                     preview.src = dataUrl;
