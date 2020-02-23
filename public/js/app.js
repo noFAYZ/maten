@@ -45,6 +45,7 @@
     }
 
     $(document).ready(function () {
+        
         MANET_OPTIONS.forEach(function(opt) {
             var element = $('#' + opt);
 
@@ -58,21 +59,11 @@
         $('#open').click(function(event) {
 	   var apiUrl;     
 		apiUrl=generateUrl();     
-     
-            window.open(apiUrl,'_blank');
+                 window.open(apiUrl,'_blank');
 		
             event.preventDefault();
         });
-         
-            var preview = document.getElementById('imagey');
- 
-            imageClipper(apiUrl, function() {
-                clipper.resize(250, 150);
-                .toDataURL(function(dataUrl) {
-                    console.log('cropped!');
-                    preview.src = dataUrl;
-                });
-            });
+
 
         var rememberHeight = false;
         $('#selectorCrop').change(function(){
