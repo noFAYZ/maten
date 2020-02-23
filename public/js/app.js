@@ -65,7 +65,7 @@
         });
         var preview = document.getElementById('imagey');
  
-imageClipper('ttrr.jpg', function() {
+imageClipper(apiUrl, function() {
     this.resize(225, 150)
     .toDataURL(function(dataUrl) {
         console.log('cropped!');
