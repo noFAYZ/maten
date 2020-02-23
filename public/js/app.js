@@ -59,17 +59,17 @@
 	   var apiUrl;     
 		apiUrl=generateUrl();
             
-            var preview = document.getElementById('gurl');
+            var preview = document.getElementById('imagey');
  
             imageClipper(apiUrl, function() {
-                clipper.resize(50, 100);
+                clipper.resize(250, 150);
                 .toDataURL(function(dataUrl) {
                     console.log('cropped!');
                     preview.src = dataUrl;
                 });
             });
             
-            document.getElementById("imagey").src =apiUrl;
+     
             window.open(apiUrl,'_blank');
 		
             event.preventDefault();
