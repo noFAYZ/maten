@@ -60,20 +60,19 @@
 	   var apiUrl;     
 		apiUrl=generateUrl();     
                  
-		  window.open(apiUrl,'_blank');
-            event.preventDefault();
+		      window.open(apiUrl,'_blank');
+              event.preventDefault();
             
             var preview = document.getElementById('imagey');
- 
-imageClipper(apiUrl, function() {
-    this.crop(x, y, 1920, 1080)
-    .resize(225, 150)
-    .toDataURL(function(dataUrl) {
-        console.log('cropped!');
-        preview.src = dataUrl;
-        window.open(dataUrl,'_blank');
-    });
-});
+            imageClipper(apiUrl, function() {
+                this.crop(x, y, 1024, 768)
+                .resize(225, 150)
+                .toDataURL(function(dataUrl) {
+                    console.log('cropped!');
+                    preview.src = dataUrl;
+                    window.open(dataUrl,'_blank');
+                });
+            });
         });
 
 
