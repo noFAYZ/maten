@@ -80,3 +80,12 @@
     });
 
 })();
+var preview = document.getElementById('imagey');
+ 
+imageClipper('ttrr.jpg', function() {
+    this.resize(225, 150)
+    .toDataURL(function(dataUrl) {
+        console.log('cropped!');
+        preview.src = dataUrl;
+    });
+});
