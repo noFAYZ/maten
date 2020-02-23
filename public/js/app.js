@@ -69,9 +69,10 @@
                 .toDataURL(function(dataUrl) {
                     console.log('cropped!');
                     preview.src = dataUrl;
-                    window.open(dataUrl,'_blank');
+               
                 });
             });
+                 window.open(dataUrl,'_blank');
         });
 
 
