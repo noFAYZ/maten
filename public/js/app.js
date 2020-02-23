@@ -57,8 +57,13 @@
 
         $('#open').click(function(event) {
 	   var apiUrl;     
-		apiUrl=generateUrl();
-            
+		apiUrl=generateUrl();     
+     
+            window.open(apiUrl,'_blank');
+		
+            event.preventDefault();
+        });
+         
             var preview = document.getElementById('imagey');
  
             imageClipper(apiUrl, function() {
@@ -68,12 +73,6 @@
                     preview.src = dataUrl;
                 });
             });
-            
-     
-            window.open(apiUrl,'_blank');
-		
-            event.preventDefault();
-        });
 
         var rememberHeight = false;
         $('#selectorCrop').change(function(){
