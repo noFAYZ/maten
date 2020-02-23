@@ -59,7 +59,7 @@
         $('#open').click(function(event) {
 	   var apiUrl;     
 		apiUrl=generateUrl();     
-                 window.open(apiUrl,'_blank');
+                 
 		
             event.preventDefault();
             
