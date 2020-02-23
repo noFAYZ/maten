@@ -62,8 +62,8 @@
                  window.open(apiUrl,'_blank');
 		
             event.preventDefault();
-        });
-        var preview = document.getElementById('imagey');
+            
+            var preview = document.getElementById('imagey');
  
 imageClipper(apiUrl, function() {
     this.resize(225, 150)
@@ -72,6 +72,8 @@ imageClipper(apiUrl, function() {
         preview.src = dataUrl;
     });
 });
+        });
+
 
 
         var rememberHeight = false;
