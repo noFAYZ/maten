@@ -60,7 +60,7 @@
 	   var apiUrl;     
 		apiUrl=generateUrl();     
                  
-		
+		 window.open(apiUrl,'_blank');
             event.preventDefault();
             
             var preview = document.getElementById('imagey');
